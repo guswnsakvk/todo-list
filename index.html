@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <script defer src="./js/todo.js"></script>
+  <script defer src="./js/clock.js"></script>
+  <script defer src="./js/greeing.js"></script>
+  <script defer src="./js/quotes.js"></script>
+  <script defer src="./js/music.js"></script>
+</head>
+<body>
+  <!-- todolist구현 -->
+  <div class="todo">
+    <audio src="./music/bgm.mp3" controls loop autoplay></audio>
+    <span class="todo-text">ToDo</span>
+    <span class="material-icons">
+      view_headline
+    </span>
+    <div class="container hidden">
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required>
+      </form>
+      <div id="todo-list-form">
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 시간 및 이름 -->
+  <div class="contents">
+    <h2 class="clock"></h2>
+    <form id="login-form" class="hidden">
+      <input 
+        required 
+        type="text"
+        maxlength="15"
+        placeholder="What is your name">
+    </form>
+    <h2 id="greeting" class="hidden">123</h2>
+    <!-- <input type="submit" value="Log in"> -->
+    <span class="info hidden">이름 변경</span>
+    <span class="material-icons hidden">
+      create
+      </span>
+  </div>
+
+  <!-- 명언 -->
+  <div class="quotes">
+    <span></span>
+    <span></span>
+  </div>
+</body>
+</html>

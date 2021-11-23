@@ -1,0 +1,163 @@
+.hidden{
+  display: none;
+}
+
+.button{
+  background-color:#000;
+  border:0px transparent solid;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+body{
+  background-image: url("./img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+audio{
+  position: absolute;
+  top: 10px;
+  left:65%;
+  height: 30px;
+}
+
+div.todo{
+  height: 50px;
+}
+
+span.todo-text{
+  position: absolute;
+  top: 14px;
+  left: 88%;
+  font-size: 20px;
+}
+
+span.material-icons {
+  position: absolute;
+  top: 10px;
+  left: 92%;
+  font-size: 30px;
+}
+
+span.material-icons:hover{
+  cursor: pointer;
+}
+
+div.container{
+  height: 400px;
+  background-color: #ffb444;
+  position: absolute;
+  width: 250px;
+  top: 46px;
+  left: 76%;
+  border-radius: 15px;
+}
+
+div.container #todo-list-form #todo-list{
+  width: 200px;
+  height: 330px;
+  position: absolute;
+  left: 25px;
+  top: 50px;
+  overflow: auto;
+  line-height: 22px;
+}
+
+div.container #todo-list-form #todo-list span:nth-last-child(2){
+  cursor: pointer;
+}
+
+div.container #todo-list-form #todo-list span:last-child{
+  cursor: pointer;
+}
+
+div.container #todo-list-form #todo-list::-webkit-scrollbar{
+  width: 10px;
+}
+
+div.container #todo-list-form #todo-list::-webkit-slider-thumb{
+  background-color: #000;
+  border-radius: 10px;
+}
+
+div.container #todo-list-form #todo-list::-webkit-scrollbar-track{
+  background: #0004;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px #fff;
+}
+
+div.contents{
+  padding: 20px;
+  box-sizing: border-box;
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+div.contents h2.clock{
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+div.contents #login-form input{
+  position: absolute;
+  width: 180px;
+  margin: 0 auto;
+  top: 150px;
+  left: 200.5px;
+  text-align: center;
+  background: none;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 1;
+}
+
+div.contents h2#greeting{
+  font-size: 60px;
+  text-align: center;
+}
+
+div.contents span.info{
+  font-size: 30px;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+}
+
+div.contents span.material-icons{
+  position: absolute;
+  top: 300px;
+  left: 340px;
+}
+
+#todo-form{
+  margin-top: 20px;
+  text-align: center;
+}
+
+#todo-form input{
+  width: 200px;
+  background: none;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 1;
+}
+
+#todo-form input::placeholder{
+  color: #000;
+}
+
+.quotes{
+  margin-top: 90px;
+  text-align: center;
+  line-height: 25px;
+}
