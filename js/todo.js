@@ -48,7 +48,6 @@ function paintToDo(newTodo){
 
 function doneToDo(event){
   const li = event.target.parentElement.childNodes[0]
-  console.log(event)
   li.classList.toggle("done")
 }
 
